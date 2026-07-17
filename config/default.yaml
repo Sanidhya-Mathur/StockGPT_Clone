@@ -1,0 +1,20 @@
+data:
+  ticker: "AAPL"
+  start_date: "2015-01-01"
+  end_date: "2024-01-01"
+  look_back: 60
+
+model:
+  type: "lstm"  # or 'xgboost'
+  n_estimators: 100
+  learning_rate: 0.1
+
+training:
+  epochs: 20
+  batch_size: 32
+  val_split: 0.2
+  test_size: 0.2
+
+artifacts:
+  dir: "artifacts"
+
